@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Input Fields, Buttons, Radio, Checkbox</title>
+</head>
+<body>
+    <!-- 
+1. <form> ... </form>
+
+**Istemaal:** Yeh tag form banata hai. Jitne bhi input fields hotay hain (text box, radio, checkbox, etc.) sab isi ke andar likhe jaate hain.
+**Explanation:** Yeh form ka container hota hai. Jab user form fill karta hai aur submit karta hai to yeh data kisi file ya server par bhejne ke liye hota hai.
+
+2. <label>
+
+**Explanation:** Yeh kisi input field ke naam ko represent karta hai. Isse user ko samajh aata hai ke uss box mein kya likhna hai (jaise Name, Email). 
+
+3. <input type="text">
+
+**Explanation:** Yeh ek simple text field hoti hai jahan user apna naam ya koi bhi text likh sakta hai.
+
+4. <input type="email">
+
+**Explanation:** Yeh email likhne ke liye hota hai. Agar user ne sahi format mein email nahi likha to browser error show karta hai.
+
+5. <input type="password">
+
+**Explanation:** Yeh field password ke liye hoti hai. Jab user kuch likhta hai to woh dikhai nahi deta (sirf dots ya stars dikhte hain).
+
+6. <input type="radio">
+
+**Explanation:** Yeh gol buttons hotay hain. User sirf ek hi option select kar sakta hai. `name` same hona zaroori hai warna multiple select ho jaayenge.
+
+7. <input type="checkbox">
+
+**Explanation:** Checkbox mein user ek se zyada options select kar sakta hai. Jaise agar kisi ke paas HTML bhi aati hai aur CSS bhi, to dono select kar sakta hai.
+
+8. <select> ... </select>
+
+**Explanation:** Yeh dropdown list banata hai. User ek option select kar sakta hai. Har option `<option>` tag mein hota hai.
+
+9. <textarea>
+
+**Explanation:** Yeh bara text box hota hai jahan user apna feedback ya message likhta hai. Iska size `rows` aur `cols` se control hota hai.
+
+10. <input type="submit">
+
+**Explanation:** Yeh button hota hai jo form ko submit karta hai. Jab user ispar click karta hai to form ka data send hota hai.
+
+ -->
+
+    <h1>Registration Forms</h1>
+
+    <form>
+    <p>Name: <input type="text" name="username"></p>
+    <p>Password: <input type="text" name="userpassword"></p>
+    <p>Email: <input type="text" name="useremail"></p>
+
+    <p>Gender:
+        <input type="radio" name="gender" value ="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+    </p>
+
+    <p>Select Skills:
+        <input type="checkbox" name="skill" value="html"> HTML
+        <input type="checkbox" name="skill" value="css"> CSS
+        <input type="checkbox" name="skill" value="js"> JavaScript
+      </p>
+    
+      <p>Country:
+        <select name="country">
+          <option value="pk">Pakistan</option>
+          <option value="in">India</option>
+          <option value="uk">UK</option>
+        </select>
+      </p>
+
+    <p>Message:<br>
+        <textarea name="message" rows="4" cols="40"></textarea>
+      </p>
+
+      <input type="submit" value="Register">
+    </form>
+</body>
+</html>
