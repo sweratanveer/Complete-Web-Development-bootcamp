@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table and calgroup</title>
+</head>
+<body>
+    <h2>HTML Table and calgroup</h2>
+    <!-- Table -->
+    <table border="10" align="center">
+        <caption>Student's Record</caption>
+        <!-- tr stands for table row
+            td stands for table data
+            th stands for tabe heading -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Father's Name</th>
+                <th>Departement</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>swera</td>
+            <td rowspan="3">Tanveer</td>
+            <td>CS</td>
+        </tr>
+        <tr>
+            <td>swera</td>
+            <td>CS</td>
+        </tr>
+        <tr>
+            <td>swera</td>
+            <td>CS</td>
+        </tr>
+        <tr align="center">
+            <td colspan="3">All above students belong to BIC</td>
+        </tr>
+    </table> <br><br>
+    <!-- colgroup -->
+    <colgroup>
+        <col span="1" bgcolor="pink">
+        <col bgcolor="grey" span="2">
+    </colgroup><br><br>
+</body>
+</html>

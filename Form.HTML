@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <dialog open>
+            This is an open dialog window.
+        </dialog>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <!-- Template -->
+        <template>
+            <h2>Hidden Content</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem doloremque
+                eligendi consequatur mollitia quis debitis excepturi quasi facilis sed
+                in autem architecto, eveniet sunt adipisci amet dolore vel illo earum?</p>
+        </template><br>
+        <br>
+        <!-- SVG -->
+        <svg width="700" height="100">
+            <circle cx="50" cy="50" r="100" stroke="red" stroke-width="4" fill="blue" />
+        </svg><br><br>
+        <!-- Progress -->
+        <div>
+            <progress value="500" max="1500"></progress>
+        </div>
+        <br>
+        <br>
+        <!-- Meter -->
+        <div>
+            <meter value="2" min="0" max="10"></meter>
+        </div>
+        <br>
+        <br>
+        <!-- Details and Summary -->
+        <div>
+            <details>
+                <summary>HTML</summary>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Necessitatibus voluptate alias cupiditate deleniti exerci
+                    tationem et nisi architecto quod earum illo nam incidunt
+                    doloremque autem, facere ullam, itaque error, numquam harum.</p>
+            </details>
+        </div>
+        <br><br>
+        <!-- Field set  -->
+
+
+        <!-- Select Options -->
+        <div>
+            <fieldset>
+                <legend>Select and OPTGROUP</legend>
+                <Select multiple size="">
+                    <optgroup>
+                        <option disable label="SELECT"></option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>JAVA</option>
+                    </optgroup>
+                    <optgroup>
+                        <option disable label="SELECT"></option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>JAVA</option>
+                    </optgroup>
+                </Select>
+            </fieldset>
+
+        </div>
+
+        <!-- Radio button -->
+        <fieldset>
+            <legend>RADIO AND CHECKBOX</legend>
+            <div>
+                <input type="radio" name="gender" id="FEMALE"><label for="female">FEMALE</label>
+                <input type="radio" name="gender" id="MALE"><label for="male">MALE</label>
+            </div>
+            <!-- Check Box -->
+            <div>
+                <input type="checkbox" name="code" id="HTML"><label for="HTML">HTML</label>
+                <input type="checkbox" name="code" id="CSS"><label for="CSS">CSS</label>
+                <input type="checkbox" name="code" id="JS"><label for="JS">JS</label>
+
+            </div>
+        </fieldset>
+
+        <!-- DATA LIST -->
+        <div>
+            <input list="code">
+            <datalist id="code">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JAVA">JAVA</option>
+            </datalist>
+        </div>
+        <div>
+            <label> Name </label>
+            <input type="text" name="">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <label> Password </label>
+            <input type="password">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="Email" name="" placeholder="xyz@gmail.com">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <label>Search</label>
+            <input type="search" name="">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <label>URL</label>
+            <input type="url" name="" placehlder="">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <label>Number</label>
+            <input type="number" max="10" min="0" step="2" name="">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <label>TEL</label>
+            <input type="Tel" name="">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <label>Color</label>
+            <input type="color" name="">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <label for="rangeInput">Range</label>
+            <input type="range" id="rangeInput" name="range" value="20" min="0" max="100">
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div>
+            <label>TIME</label>
+            <input type="time" name="">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <label>WEEK</label>
+            <input type="WEEK" name="">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <label>Month</label>
+            <input type="month" name="">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <label>Date & Time</label>
+            <input type="datetime-local" name="">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <label>Upload your file</label>
+            <input type="file" accept="image/*" name="">
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- <div>
+         <label >Hidden:</label>
+        <input type="hidden" name = "">
+   </div>
+        <br>
+        <br>
+        <br> -->
+
+        <!-- HTML Text Area -->
+        <textarea cols="60" rows="10"></textarea>
+        <div>
+            <input type="Reset" name="">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <input type="Submit" name="">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <input type="image" name="">
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+    </form>
+</body>
+
+</html>
